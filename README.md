@@ -67,7 +67,7 @@ picker.pickCamera(new PickerListener() {
 ```
 ![kotlin](https://img.shields.io/badge/-Kotlin-%23BA00BB)
 ```kotlin
-picker.pickCamera { uri: Uri?, file: File?, bitmap: Bitmap? ->
+picker.pickCamera { uri, file, bitmap ->
     //do something
 }
 ```
