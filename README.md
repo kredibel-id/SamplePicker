@@ -28,12 +28,18 @@ dependencies {
 }
 ```
 ## Using Picker
-Initialize Picker object on your Activity or Fragment
+Initialize Picker object on your Activity or Fragment<br/>   
+![java](https://img.shields.io/badge/-Java-%23B07119)
 ```kotlin
 Picker picker = new Picker(this);
 ```
+![kotlin](https://img.shields.io/badge/-Kotlin-%23BA00BB)
+```kotlin
+var picker = Picker(this)
+```
 
 ## Pick image from Gallery
+![java](https://img.shields.io/badge/-Java-%23B07119)
 ```kotlin
 picker.pickGallery(new PickerListener() {
     @Override
@@ -42,7 +48,15 @@ picker.pickGallery(new PickerListener() {
     }
 });
 ```
+![kotlin](https://img.shields.io/badge/-Kotlin-%23BA00BB)
+```kotlin
+picker.pickGallery { uri, file, bitmap ->
+    imgResult.setImageURI(uri)
+}
+```
+
 ## Pick from Camera
+![java](https://img.shields.io/badge/-Java-%23B07119)
 ```kotlin
 picker.pickCamera(new PickerListener() {
     @Override
@@ -51,8 +65,15 @@ picker.pickCamera(new PickerListener() {
     }
 });
 ```
+![kotlin](https://img.shields.io/badge/-Kotlin-%23BA00BB)
+```kotlin
+picker.pickCamera { uri: Uri?, file: File?, bitmap: Bitmap? ->
+    imgResult.setImageURI(uri)
+}
+```
 
 ## With lambda
+![java](https://img.shields.io/badge/-Java-%23B07119)
 ```kotlin
 picker.pickCamera((uri, file, bitmap) -> {
     //do something;
