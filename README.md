@@ -34,7 +34,7 @@ picker.pickGallery(new PickerListener() {
 });
 ```
 ## Pick from Camera
-```
+```kotlin
 picker.pickCamera(new PickerListener() {
     @Override
     public void onPicked(Uri uri, File file, Bitmap bitmap) {
