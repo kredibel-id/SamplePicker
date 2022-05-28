@@ -42,3 +42,10 @@ picker.pickCamera(new PickerListener() {
     }
 });
 ```
+
+## With lambda
+```kotlin
+picker.pickCamera((uri, file, bitmap) -> {
+    //do something;
+});
+```
