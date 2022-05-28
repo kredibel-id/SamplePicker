@@ -1,7 +1,10 @@
 ## SamplePicker
 Sample project using Picker library for attach image from Gallery or Camera.
 <br/><br/><br/>
-<h1 align="center"> Picker</h1>
+<h1 align="center"> 
+    <img width="150" src="https://github.com/kredibel-id/SamplePicker/blob/main/picker-icon.png?raw=true"/><br/>
+    Picker
+</h1>
 
 ## Getting started
 ### Support API Level
