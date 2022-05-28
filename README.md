@@ -19,7 +19,7 @@ dependencies {
 }
 ```
 ## Using Picker
-Init on your Activity or Fragment
+Initialize Picker object on your Activity or Fragment
 ```kotlin
 Picker picker = new Picker(this);
 ```
