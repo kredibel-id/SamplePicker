@@ -24,11 +24,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnCamera).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                picker.pickCamera(new PickerListener() {
-                    @Override
-                    public void onPicked(Uri uri, File file, Bitmap bitmap) {
-                        imgResult.setImageURI(uri);
-                    }
+                picker.pickCamera((uri, file, bitmap) -> {
+                    //do something;
                 });
             }
         });
