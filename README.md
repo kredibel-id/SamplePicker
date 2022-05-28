@@ -51,7 +51,7 @@ picker.pickGallery(new PickerListener() {
 ![kotlin](https://img.shields.io/badge/-Kotlin-%23BA00BB)
 ```kotlin
 picker.pickGallery { uri, file, bitmap ->
-    imgResult.setImageURI(uri)
+    //do something
 }
 ```
 
@@ -68,7 +68,7 @@ picker.pickCamera(new PickerListener() {
 ![kotlin](https://img.shields.io/badge/-Kotlin-%23BA00BB)
 ```kotlin
 picker.pickCamera { uri: Uri?, file: File?, bitmap: Bitmap? ->
-    imgResult.setImageURI(uri)
+    //do something
 }
 ```
 
