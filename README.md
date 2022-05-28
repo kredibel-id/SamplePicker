@@ -72,7 +72,7 @@ picker.pickCamera { uri: Uri?, file: File?, bitmap: Bitmap? ->
 }
 ```
 
-## With lambda
+## With lambda (JDK 1.8+)
 ![java](https://img.shields.io/badge/-Java-%23B07119)
 ```kotlin
 picker.pickCamera((uri, file, bitmap) -> {
