@@ -24,12 +24,21 @@ Init on your Activity or Fragment
 Picker picker = new Picker(this);
 ```
 
-## Pick Gallery
+## Pick image from Gallery
 ```kotlin
 picker.pickGallery(new PickerListener() {
     @Override
     public void onPicked(Uri uri, File file, Bitmap bitmap) {
-        imgResult.setImageURI(uri);
+        //do something
+    }
+});
+```
+## Pick from Camera
+```
+picker.pickCamera(new PickerListener() {
+    @Override
+    public void onPicked(Uri uri, File file, Bitmap bitmap) {
+        //do something
     }
 });
 ```
