@@ -1,13 +1,10 @@
 package id.co.kredibel.pickersample
 
-import android.graphics.Bitmap
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import io.kredibel.picker.Picker
-import java.io.File
 
 class MainActivity : AppCompatActivity() {
     var picker = Picker(this)
@@ -17,7 +14,11 @@ class MainActivity : AppCompatActivity() {
         val imgResult = findViewById<ImageView>(R.id.imgResult)
         findViewById<View>(R.id.btnCamera).setOnClickListener {
 
-            picker.pickCamera { uri: Uri?, file: File?, bitmap: Bitmap? ->
+            /*picker.pickCamera { uri: Uri?, file: File?, bitmap: Bitmap? ->
+                imgResult.setImageURI(uri)
+            }*/
+
+            picker.pickCamera { uri, file, bitmap ->
                 imgResult.setImageURI(uri)
             }
 
