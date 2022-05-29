@@ -5,56 +5,5 @@ You can checkout the source code of this project.
 git clone https://github.com/kredibel-id/SamplePicker.git
 ```
 Then open this sample project with Android Studio or Intellij IDEA.
-<br/><br/><br/><br/><br/>
-<h1 align="center"> 
-    <img width="150" src="https://github.com/kredibel-id/SamplePicker/blob/main/picker-icon.png?raw=true"/><br/>
-    Picker
-</h1>
 
-## Getting started
-### Support API Level
-![minsdk](https://img.shields.io/badge/Min%20SDK-API%2024-%233DDC84?logo=android) ![targetsdk](https://img.shields.io/badge/Max%20Support-API%2031-%233DDC84?logo=android)
-
-## Setup
-#### 1. Add kredibel repository.
-```groovy
-maven{url 'https://repo.repsy.io/mvn/kredibel/sdk'}
-```
-
-#### 2. Add this dependency to gradle script on app module.
-```groovy
-dependencies {
-    implementation 'io.kredibel:picker:0.0.1-beta' // Please check latest version
-}
-```
-## Using Picker
-Initialize Picker object on your Activity or Fragment
-```kotlin
-Picker picker = new Picker(this);
-```
-
-## Pick image from Gallery
-```kotlin
-picker.pickGallery(new PickerListener() {
-    @Override
-    public void onPicked(Uri uri, File file, Bitmap bitmap) {
-        //do something
-    }
-});
-```
-## Pick from Camera
-```kotlin
-picker.pickCamera(new PickerListener() {
-    @Override
-    public void onPicked(Uri uri, File file, Bitmap bitmap) {
-        //do something
-    }
-});
-```
-
-## With lambda
-```kotlin
-picker.pickCamera((uri, file, bitmap) -> {
-    //do something;
-});
-```
+<a target="_blank" href="https://github.com/kredibel-id/Picker"><img src="https://img.shields.io/badge/Picker-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
